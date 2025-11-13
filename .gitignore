@@ -1,0 +1,108 @@
+# ================================
+# .NET 项目
+# ================================
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]ld/
+
+# Publish directory
+publish/
+WGetCrawler.Api/publish/
+
+# Visual Studio cache/options directory
+.vs/
+.vscode/
+.idea/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+packages/
+!**/packages/build/
+
+# ================================
+# Node.js / Frontend
+# ================================
+node_modules/
+.pnp
+.pnp.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Frontend build
+frontend/dist/
+frontend/build/
+frontend/.vite/
+
+# ================================
+# 发布文件
+# ================================
+# 发布的可执行程序文件夹
+WGetCrawler-Windows/
+
+# 打包的 zip 文件
+*.zip
+WGetCrawler-*.zip
+
+# ================================
+# 日志和数据文件
+# ================================
+logs/
+*.log
+*.db
+*.sqlite
+
+# PuppeteerSharp 下载的浏览器
+.local-chromium/
+.local-firefox/
+
+# ================================
+# 环境变量和配置
+# ================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 敏感配置文件（如果有）
+config/database.json
+config/redis.json
+appsettings.Production.json
+
+# ================================
+# 操作系统和编辑器
+# ================================
+.DS_Store
+Thumbs.db
+*.sw?
+*.swp
+*~
+
+# Playwright
+.playwright/
+
+# ================================
+# 临时文件
+# ================================
+*.tmp
+*.temp
+*.cache
+.cache/
