@@ -20,7 +20,7 @@ const { Option } = Select;
 const CrawlQuery: React.FC = () => {
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
-  const [taskLoading, setTaskLoading] = useState(false);
+  const [taskLoading] = useState(false);
   const [queryResults, setQueryResults] = useState<CrawlTask[]>([]); // 改为数组存储多个结果
   const [polling, setPolling] = useState(false);
   const [currentPollingTaskId, setCurrentPollingTaskId] = useState<string>(''); // 当前轮询的任务ID

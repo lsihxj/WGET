@@ -9,7 +9,7 @@
 - ✅ 自包含可执行文件,无需安装 .NET 运行时
 - ✅ 无数据库依赖,使用 JSON 配置文件管理规则
 - ✅ 内存缓存,提升重复查询性能
-- ✅ 基于 Playwright 的浏览器自动化
+- ✅ 基于 PuppeteerSharp 的浏览器自动化
 - ✅ 轻量级任务调度 (Channel)
 - ✅ 完全兼容原有 API 接口
 
@@ -17,10 +17,11 @@
 
 - .NET 8 SDK
 - ASP.NET Core Web API
-- Playwright for .NET
+- PuppeteerSharp 20.2.4 (浏览器自动化)
 - IMemoryCache (内存缓存)
 - Channel (任务队列)
 - AspNetCoreRateLimit (速率限制)
+- Serilog (结构化日志)
 
 ## 快速开始
 
@@ -198,13 +199,10 @@ WGetCrawler.Api/
 
 ### 浏览器下载失败
 
-手动安装 Playwright 浏览器:
+PuppeteerSharp 会自动下载 Chromium 浏览器到用户目录:
+- Windows: `%USERPROFILE%\.local-chromium\`
 
-```bash
-.\WGetCrawler.Api.exe
-# 或
-pwsh bin\Debug\net8.0\.playwright\package\lib\cli\cli.js install chromium
-```
+如果自动下载失败,可以手动下载并放置到该目录
 
 ### 端口已被占用
 
